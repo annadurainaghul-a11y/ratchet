@@ -1,0 +1,43 @@
+{
+  "name": "prompt-ratchet",
+  "version": "0.1.0",
+  "description": "Regression testing for AI features. Finds the prompts in your repo, writes the evals for you, and fails the build when quality slips.",
+  "type": "module",
+  "bin": {
+    "ratchet": "./bin/ratchet.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "action.yml",
+    "ratchet.config.example.json"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/smoke.js",
+    "demo": "node ./bin/ratchet.js demo"
+  },
+  "keywords": [
+    "llm",
+    "evals",
+    "testing",
+    "regression",
+    "prompt",
+    "ci",
+    "ai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.122.0",
+    "zod": "^4.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annadurainaghul-a11y/ratchet.git"
+  },
+  "homepage": "https://github.com/annadurainaghul-a11y/ratchet#readme"
+}

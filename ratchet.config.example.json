@@ -1,0 +1,24 @@
+{
+  "include": ["src"],
+
+  "samples": 3,
+  "concurrency": 4,
+  "threshold": 0.34,
+  "casesPerPrompt": 8,
+
+  "targetModel": null,
+
+  "endpoints": {
+    "support-triage": {
+      "url": "http://localhost:3000/api/support",
+      "method": "POST",
+      "headers": { "authorization": "Bearer ${SUPPORT_TOKEN}" },
+      "body": {
+        "customerName": "{{customerName}}",
+        "question": "{{question}}"
+      },
+      "extract": "reply",
+      "timeoutMs": 30000
+    }
+  }
+}

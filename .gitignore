@@ -1,0 +1,7 @@
+node_modules/
+.ratchet/runs/
+.ratchet/latest.json
+ratchet-comment.md
+.env
+.DS_Store
+SHOW_HN.md
